@@ -4,6 +4,8 @@
  */
 package medactema14.practica_intermodular;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Usuario
@@ -64,6 +66,9 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
         jDia = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jNombre = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jnumeroSatelite = new javax.swing.JLabel();
+        Imagen = new javax.swing.JLabel();
 
         jLabel12.setText("jLabel8");
 
@@ -185,86 +190,105 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
 
         jNombre.setText(".");
 
+        jLabel23.setText("Numero de saltelites");
+
+        jnumeroSatelite.setText(".");
+
+        Imagen.setText(".");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel7))
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel17))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel18)))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel13)
+                                        .addComponent(jLabel7))
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel17))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel18)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabel5))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jComposicion)
+                                    .addComponent(jLabel20)))))
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel5))
+                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(bSaturno)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(bUrano)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(bNeptuno)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(35, 35, 35)
+                                        .addComponent(jLabel6))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bMarte, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton4)))
+                                .addGap(18, 18, 18)
+                                .addComponent(Imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel21)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel22)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel3)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel23)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComposicion)
-                            .addComponent(jLabel20))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel22))
-                        .addGap(69, 69, 69)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jnumeroSatelite, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jlDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jDia, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jlTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jlTipo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(bSaturno)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(bUrano)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(bNeptuno)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bMarte, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton4))))
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(60, Short.MAX_VALUE))
+                            .addComponent(jlTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)
                         .addComponent(jLabel6)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -279,80 +303,80 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
                                 .addComponent(bUrano)
                                 .addComponent(bNeptuno)
                                 .addComponent(jButton2))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jLabel9)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel7)
-                                            .addComponent(jLabel11))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel13)
-                                            .addComponent(jLabel14))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel15)
-                                            .addComponent(jLabel16)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jNombre)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel17)
-                                        .addComponent(jLabel18))
-                                    .addComponent(jlDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel22)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel4)
-                                .addGap(18, 18, 18)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jDia)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel19)
-                                .addComponent(jLabel20))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel21)))
+                    .addComponent(Imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(jNombre))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jComposicion, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(11, 11, 11)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jlTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jlTipo))
-                        .addGap(22, 22, 22))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jlDistancia, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(jDia))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jlTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jlTipo))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jnumeroSatelite))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 19, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20))
+                .addGap(7, 7, 7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jComposicion, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * 
+     * Maneja el evento de acción del botón de Marte.
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Marte 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void bMarteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bMarteActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Martepequeño.jpg");
         Conexionbbdd conexion = new Conexionbbdd();
         String[] datosMarte =  conexion.conectarConsultarMarte();
         jNombre.setText("Marte");
@@ -361,90 +385,161 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
         jlTemperatura.setText(datosMarte[3]);
         jlDistancia.setText(datosMarte[1]);
         jDia.setText(datosMarte[2]);
+        jnumeroSatelite.setText(datosMarte[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_bMarteActionPerformed
-
+    /**
+     * Maneja el evento de acción del botón de Venus.
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Venus 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Venuspequeño.png");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosVenus =  conexion.conectarConsultarMarte();
+        String[] datosVenus =  conexion.conectarConsultarVenus();
         jNombre.setText("Venus");
         jLRadio.setText(datosVenus[0]); 
         jlTipo.setText(datosVenus[4]);
         jlTemperatura.setText(datosVenus[3]);
         jlDistancia.setText(datosVenus[1]);
         jDia.setText(datosVenus[2]);
+        jnumeroSatelite.setText(datosVenus[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_jButton3ActionPerformed
 
+     /**
+     * Maneja el evento de acción del botón de Tierra.
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Tierra 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Tierrapequeño.jpg");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosTierra =  conexion.conectarConsultarMarte();
+        String[] datosTierra =  conexion.conectarConsultarTierra();
         jNombre.setText("Tierra");
         jLRadio.setText(datosTierra[0]); 
         jlTipo.setText(datosTierra[4]);
         jlTemperatura.setText(datosTierra[3]);
         jlDistancia.setText(datosTierra[1]);
         jDia.setText(datosTierra[2]);
+        jnumeroSatelite.setText(datosTierra[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+     /**
+     * Maneja el evento de acción del botón de Mercurio
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Mercurio 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Mercuriopequeño.jpg");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosMercurio =  conexion.conectarConsultarMarte();
+        String[] datosMercurio =  conexion.conectarConsultarMercurio();
         jNombre.setText("Mercurio");
         jLRadio.setText(datosMercurio[0]); 
         jlTipo.setText(datosMercurio[4]);
         jlTemperatura.setText(datosMercurio[3]);
         jlDistancia.setText(datosMercurio[1]);
         jDia.setText(datosMercurio[2]);
+        jnumeroSatelite.setText(datosMercurio[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_jButton4ActionPerformed
 
+     /**
+     * Maneja el evento de acción del botón de Saturno.
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Saturno 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void bSaturnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSaturnoActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Saturnopequeño.png");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosSaturno =  conexion.conectarConsultarMarte();
+        String[] datosSaturno =  conexion.conectarConsultarSaturno();
         jNombre.setText("Saturno");
         jLRadio.setText(datosSaturno[0]); 
         jlTipo.setText(datosSaturno[4]);
         jlTemperatura.setText(datosSaturno[3]);
         jlDistancia.setText(datosSaturno[1]);
         jDia.setText(datosSaturno[2]);
+        jnumeroSatelite.setText(datosSaturno[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_bSaturnoActionPerformed
 
+     /**
+     * Maneja el evento de acción del botón de Urano
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Urano 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void bUranoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUranoActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Uranopequeño.jpg");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosUrano =  conexion.conectarConsultarMarte();
+        String[] datosUrano =  conexion.conectarConsultarUrano();
         jNombre.setText("Urano");
         jLRadio.setText(datosUrano[0]); 
         jlTipo.setText(datosUrano[4]);
         jlTemperatura.setText(datosUrano[3]);
         jlDistancia.setText(datosUrano[1]);
         jDia.setText(datosUrano[2]);
+        jnumeroSatelite.setText(datosUrano[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_bUranoActionPerformed
 
+     /**
+     * Maneja el evento de acción del botón de Neptuno.
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Neptuno 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void bNeptunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bNeptunoActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Neptunopequeño.jpg");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosNeptuno =  conexion.conectarConsultarMarte();
+        String[] datosNeptuno =  conexion.conectarConsultarNeptuno();
         jNombre.setText("Neptuno");
         jLRadio.setText(datosNeptuno[0]); 
         jlTipo.setText(datosNeptuno[4]);
         jlTemperatura.setText(datosNeptuno[3]);
         jlDistancia.setText(datosNeptuno[1]);
         jDia.setText(datosNeptuno[2]);
+        jnumeroSatelite.setText(datosNeptuno[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_bNeptunoActionPerformed
 
+     /**
+     * Maneja el evento de acción del botón de Jupiter.
+     * Este evento se ejecutara cuando en la interfaz le demos al boton de Jupiter 
+     * Lo que hace es que todos los datos que hemos sacado mediante la consulta los labels se le cambiaran los textos acorde a lo que este en la base de datos
+     * Ademas busca la foto que esta guardada en la carpeta de resource y la pone en el label 
+     * @param evt  el evento de acción que desencadenó este método
+     */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        ImageIcon foto = new ImageIcon("C:\\Users\\Usuario\\Desktop\\Practica_Intermodular\\practica_intermodular\\src\\main\\resources\\Jupiterpequeño.jpg");
          Conexionbbdd conexion = new Conexionbbdd();
-        String[] datosJupiter =  conexion.conectarConsultarMarte();
+        String[] datosJupiter =  conexion.conectarConsultarJupiter();
         jNombre.setText("Jupiter");
         jLRadio.setText(datosJupiter[0]); 
         jlTipo.setText(datosJupiter[4]);
         jlTemperatura.setText(datosJupiter[3]);
         jlDistancia.setText(datosJupiter[1]);
         jDia.setText(datosJupiter[2]);
+        jnumeroSatelite.setText(datosJupiter[7]);
+        Imagen.setIcon(foto);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -483,6 +578,7 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Imagen;
     private javax.swing.JButton bMarte;
     private javax.swing.JButton bNeptuno;
     private javax.swing.JButton bSaturno;
@@ -510,6 +606,7 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -521,5 +618,6 @@ public class JFramePractica_intermodular extends javax.swing.JFrame {
     private javax.swing.JLabel jlDistancia;
     private javax.swing.JLabel jlTemperatura;
     private javax.swing.JLabel jlTipo;
+    private javax.swing.JLabel jnumeroSatelite;
     // End of variables declaration//GEN-END:variables
 }
